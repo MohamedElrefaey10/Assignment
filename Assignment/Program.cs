@@ -31,17 +31,29 @@
 
             #region Q3
 
-            Console.WriteLine("Enter Number");
-            int Inter = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter Number");
+            //int Inter = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= Inter; i++)
-            {
-                if (i % 2 == 1)
-                {
-                    continue;
-                }
-                Console.WriteLine(i);
-            }
+            //for (int i = 1; i <= Inter; i++)
+            //{
+            //    if (i % 2 == 1)
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine(i);
+            //}
+            #endregion
+
+            #region Q4
+
+            string xxx = Console.ReadLine();
+            string[] w = xxx.Split(' ');
+
+            int x = int.Parse(w[0]);
+            int y = int.Parse(w[1]);
+
+            double result = Math.Pow(x, y);
+            Console.WriteLine(result);
             #endregion
         }
     }
