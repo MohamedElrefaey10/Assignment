@@ -19,14 +19,29 @@
             #region Q2
 
 
+            //Console.WriteLine("Enter Number");
+            //int Inter = int.Parse(Console.ReadLine());
+
+            //for (int i = 1; i <= 12; i++)
+            //{
+            //    Console.WriteLine(Inter * i);
+            //}
+
+            #endregion
+
+            #region Q3
+
             Console.WriteLine("Enter Number");
             int Inter = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= 12; i++)
+            for (int i = 1; i <= Inter; i++)
             {
-                Console.WriteLine(Inter * i);
+                if (i % 2 == 1)
+                {
+                    continue;
+                }
+                Console.WriteLine(i);
             }
-
             #endregion
         }
     }
