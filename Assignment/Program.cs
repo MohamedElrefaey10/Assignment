@@ -74,19 +74,23 @@ namespace Assignment
             #endregion
 
             #region Q6
+
+
+            #endregion
+
+            #region Q7
             Console.WriteLine("Enter Number");
             int x = int.Parse(Console.ReadLine());
 
             StringBuilder xxx = new StringBuilder();
-            while(x > 0)
+            while (x > 0)
             {
                 int aa = x / 2;
-                int bb = x % 2;  
-                xxx.Insert(0, bb); 
+                int bb = x % 2;
+                xxx.Insert(0, bb);
                 x = aa;
             }
             Console.WriteLine(xxx);
-
             #endregion
         }
     }
