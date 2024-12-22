@@ -113,9 +113,11 @@ namespace Assignment
             #endregion
 
             #region Q9
-
+            Console.WriteLine("Enter Streng");
             string name = Console.ReadLine();
+            Console.Write("index Start : ");
             int x = int.Parse(Console.ReadLine());
+            Console.Write("index End : ");
             int y = int.Parse(Console.ReadLine())-1;
 
             Console.WriteLine(name.Substring(x,y));
