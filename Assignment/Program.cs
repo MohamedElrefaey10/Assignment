@@ -59,17 +59,33 @@ namespace Assignment
             #endregion
 
             #region Q5
-            
-            Console.WriteLine("Enter string");
-            string messag = Console.ReadLine();
 
-            StringBuilder xx = new StringBuilder();
-            for (int i = messag.Length - 1; i >= 0; i--)
+            //Console.WriteLine("Enter string");
+            //string messag = Console.ReadLine();
+
+            //StringBuilder xx = new StringBuilder();
+            //for (int i = messag.Length - 1; i >= 0; i--)
+            //{
+            //    xx.Append(messag[i]);
+
+            //}
+            //Console.WriteLine(xx);
+
+            #endregion
+
+            #region Q6
+            Console.WriteLine("Enter Number");
+            int x = int.Parse(Console.ReadLine());
+
+            StringBuilder xxx = new StringBuilder();
+            while(x > 0)
             {
-                xx.Append(messag[i]);
-
+                int aa = x / 2;
+                int bb = x % 2;  
+                xxx.Insert(0, bb); 
+                x = aa;
             }
-            Console.WriteLine(xx);
+            Console.WriteLine(xxx);
 
             #endregion
         }
