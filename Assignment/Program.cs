@@ -169,13 +169,28 @@ namespace Assignment
             #endregion
 
             #region Q12
-            int[] number = { 1, 2, 3, 4, 5,6 };
-            int y = 0; 
-            for(int i = 0; i < number.Length; i++)
+            //int[] number = { 1, 2, 3, 4, 5,6 };
+            //int y = 0; 
+            //for(int i = 0; i < number.Length; i++)
+            //{
+            //    y += number[i];
+            //}
+            //Console.WriteLine(y);
+            #endregion
+
+            #region Q13
+
+            int[] num1 = { 1, 7, 3, 4 };
+            int[] num2 = { 2, 3, 4, 5 };
+            int[] num3;
+
+            int[] max = num1.Concat(num2).ToArray();
+            foreach (var item in max)
             {
-                y += number[i];
+                Console.Write(item + " ");
             }
-            Console.WriteLine(y);
+
+
             #endregion
         }
     }
