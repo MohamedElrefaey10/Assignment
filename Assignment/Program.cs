@@ -113,15 +113,39 @@ namespace Assignment
             #endregion
 
             #region Q9
-            Console.WriteLine("Enter Streng");
-            string name = Console.ReadLine();
-            Console.Write("index Start : ");
-            int x = int.Parse(Console.ReadLine());
-            Console.Write("index End : ");
-            int y = int.Parse(Console.ReadLine())-1;
+            //Console.WriteLine("Enter Streng");
+            //string name = Console.ReadLine();
+            //Console.Write("index Start : ");
+            //int x = int.Parse(Console.ReadLine());
+            //Console.Write("index End : ");
+            //int y = int.Parse(Console.ReadLine())-1;
 
-            Console.WriteLine(name.Substring(x,y));
+            //Console.WriteLine(name.Substring(x,y));
 
+
+            #endregion
+
+            #region Q10
+            Console.WriteLine("Enter Streng01");
+            string st01 = Console.ReadLine();
+            Console.WriteLine("Enter Streng02");
+            string st02 = Console.ReadLine();
+
+            String massage;
+            massage = st01 + $" {st02}";
+
+            Console.WriteLine(massage);
+            // ********* StringBuilder
+            Console.WriteLine("Enter Streng01");
+            StringBuilder st11 = new StringBuilder( Console.ReadLine());
+            Console.WriteLine("Enter Streng02");
+            StringBuilder st22 = new StringBuilder( Console.ReadLine());
+
+            StringBuilder massage2 = new StringBuilder();
+            massage2.Append(st11);
+            massage2.Append($" {st22}");
+
+            Console.WriteLine(massage);
 
             #endregion
         }
