@@ -25,37 +25,70 @@ namespace Assignment
             //    Console.WriteLine($"{i} T");
             //}
 
-        #endregion
-        #endregion
+            #endregion
+            #endregion
 
-        #region video 02
-        #region For - Foreach
+            #region video 02
+            #region For - Foreach
 
-        int[] Numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //int[] Numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-            for (int i = 0; i < Numbers.Length; i++)
+            //for (int i = 0; i < Numbers.Length; i++)
+            //{
+            //    // Number[i] += 10;
+            //    Console.WriteLine(Numbers[i]);
+            //}
+            //    foreach (int Number in Numbers)
+            //    {
+            //        // X  Number +=10;  // invalid
+            //        Console.WriteLine(Number + 10);
+            //    }
+
+            //    for (int i= 0; i< Numbers.Length; i++)
+            //    {
+            //        if (Numbers[i] == 5)
+            //        {
+            //            continue;
+            //            break;
+            //        }
+            //        Console.WriteLine(Numbers[i]);
+            //    }
+
+
+            #endregion
+            #endregion
+
+            #region video 03
+
+            #region While - Do While
+
+            int Number;
+            do
             {
-                // Number[i] += 10;
-                Console.WriteLine(Numbers[i]);
-            }
-            foreach (int Number in Numbers)
-            {
-                // X  Number +=10;  // invalid
-                Console.WriteLine(Number + 10);
-            }
+                Console.WriteLine("Enter Even Number");
+            } while (Number % 2 == 1);
+            Console.WriteLine($"{Number} is Even");
 
-            for (int i= 0; i< Numbers.Length; i++)
+            int Number2;
+            do
             {
-                if (Numbers[i] == 5)
-                {
-                    continue;
-                    break;
-                }
-                Console.WriteLine(Numbers[i]);
-            }
+                Console.WriteLine("Enter Even Number");
+                flag = int.TryParse(Console.ReadLine(), out Number2);
+            } while (Number2 % 2 == 1);
+            Console.WriteLine($"{Number2}is Even");
 
-         
-        #endregion
-        #endregion
+            int Number3 = 3;
+            bool flag3 = false;
+            while(Number3 % 2==1 || !flag3)
+            {
+                Console.WriteLine("Enter Even Number");
+                flag3 = int.TryParse(Console.ReadLine(), out Number3);
+            }
+            Console.WriteLine($"{Number3} is EVen");
+            #endregion
+            #endregion
+
+
+        }
     }
 }
