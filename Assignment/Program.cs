@@ -79,18 +79,37 @@ namespace Assignment
             #endregion
 
             #region Q7
+            //Console.WriteLine("Enter Number");
+            //int x = int.Parse(Console.ReadLine());
+
+            //StringBuilder xxx = new StringBuilder();
+            //while (x > 0)
+            //{
+            //    int aa = x / 2;
+            //    int bb = x % 2;
+            //    xxx.Insert(0, bb);
+            //    x = aa;
+            //}
+            //Console.WriteLine(xxx);
+            #endregion
+
+            #region Q8
             Console.WriteLine("Enter Number");
             int x = int.Parse(Console.ReadLine());
-
-            StringBuilder xxx = new StringBuilder();
-            while (x > 0)
+            
+            for(int i =1; i <= x; i++)
             {
-                int aa = x / 2;
-                int bb = x % 2;
-                xxx.Insert(0, bb);
-                x = aa;
+                for(int k = 1; k <= x; k++)
+                {
+                    if (i == k)
+                        Console.Write("1");
+                    else
+                        Console.Write("0");
+                    
+                }
+                Console.WriteLine();
             }
-            Console.WriteLine(xxx);
+            
             #endregion
         }
     }
