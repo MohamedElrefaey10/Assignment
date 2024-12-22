@@ -126,27 +126,46 @@ namespace Assignment
             #endregion
 
             #region Q10
-            Console.WriteLine("Enter Streng01");
-            string st01 = Console.ReadLine();
-            Console.WriteLine("Enter Streng02");
-            string st02 = Console.ReadLine();
+            //Console.WriteLine("Enter Streng01");
+            //string st01 = Console.ReadLine();
+            //Console.WriteLine("Enter Streng02");
+            //string st02 = Console.ReadLine();
 
-            String massage;
-            massage = st01 + $" {st02}";
+            //String massage;
+            //massage = st01 + $" {st02}";
 
-            Console.WriteLine(massage);
-            // ********* StringBuilder
-            Console.WriteLine("Enter Streng01");
-            StringBuilder st11 = new StringBuilder( Console.ReadLine());
-            Console.WriteLine("Enter Streng02");
-            StringBuilder st22 = new StringBuilder( Console.ReadLine());
+            //Console.WriteLine(massage);
 
-            StringBuilder massage2 = new StringBuilder();
-            massage2.Append(st11);
-            massage2.Append($" {st22}");
+            //// ********* StringBuilder
+            //Console.WriteLine("Enter Streng01");
+            //StringBuilder st11 = new StringBuilder( Console.ReadLine());
+            //Console.WriteLine("Enter Streng02");
+            //StringBuilder st22 = new StringBuilder( Console.ReadLine());
 
-            Console.WriteLine(massage);
+            //StringBuilder massage2 = new StringBuilder();
+            //massage2.Append(st11);
+            //massage2.Append($" {st22}");
 
+            //Console.WriteLine(massage);
+
+            #endregion
+
+            #region Q11
+            Console.WriteLine("Enter Number");
+            int x = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= x; i++)
+            {
+                for (int k = 1; k <= x; k++)
+                {
+                    if (i == k)
+                        Console.Write("1");
+                    else
+                        Console.Write("0");
+
+                }
+                Console.WriteLine();
+            }
             #endregion
         }
     }
