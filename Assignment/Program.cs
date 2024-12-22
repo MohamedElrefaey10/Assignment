@@ -94,22 +94,33 @@ namespace Assignment
             #endregion
 
             #region Q8
-            Console.WriteLine("Enter Number");
+            //Console.WriteLine("Enter Number");
+            //int x = int.Parse(Console.ReadLine());
+
+            //for(int i =1; i <= x; i++)
+            //{
+            //    for(int k = 1; k <= x; k++)
+            //    {
+            //        if (i == k)
+            //            Console.Write("1");
+            //        else
+            //            Console.Write("0");
+
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
+            #region Q9
+
+            string name = Console.ReadLine();
             int x = int.Parse(Console.ReadLine());
-            
-            for(int i =1; i <= x; i++)
-            {
-                for(int k = 1; k <= x; k++)
-                {
-                    if (i == k)
-                        Console.Write("1");
-                    else
-                        Console.Write("0");
-                    
-                }
-                Console.WriteLine();
-            }
-            
+            int y = int.Parse(Console.ReadLine())-1;
+
+            Console.WriteLine(name.Substring(x,y));
+
+
             #endregion
         }
     }
