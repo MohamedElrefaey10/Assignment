@@ -62,29 +62,64 @@ namespace Assignment
 
             #region While - Do While
 
-            int Number;
-            do
-            {
-                Console.WriteLine("Enter Even Number");
-            } while (Number % 2 == 1);
-            Console.WriteLine($"{Number} is Even");
+            //int Number;
+            //do
+            //{
+            //    Console.WriteLine("Enter Even Number");
+            //} while (Number % 2 == 1);
+            //Console.WriteLine($"{Number} is Even");
 
-            int Number2;
-            do
-            {
-                Console.WriteLine("Enter Even Number");
-                flag = int.TryParse(Console.ReadLine(), out Number2);
-            } while (Number2 % 2 == 1);
-            Console.WriteLine($"{Number2}is Even");
+            //int Number2;
+            //do
+            //{
+            //    Console.WriteLine("Enter Even Number");
+            //    flag = int.TryParse(Console.ReadLine(), out Number2);
+            //} while (Number2 % 2 == 1);
+            //Console.WriteLine($"{Number2}is Even");
 
-            int Number3 = 3;
-            bool flag3 = false;
-            while(Number3 % 2==1 || !flag3)
-            {
-                Console.WriteLine("Enter Even Number");
-                flag3 = int.TryParse(Console.ReadLine(), out Number3);
-            }
-            Console.WriteLine($"{Number3} is EVen");
+            //int Number3 = 3;
+            //bool flag3 = false;
+            //while(Number3 % 2==1 || !flag3)
+            //{
+            //    Console.WriteLine("Enter Even Number");
+            //    flag3 = int.TryParse(Console.ReadLine(), out Number3);
+            //}
+            //Console.WriteLine($"{Number3} is EVen");
+            #endregion
+            #endregion
+
+            #region video 04
+
+            #region String
+
+            string Name;
+            Name = new string("ahmed");
+            Name = "ahmed";
+
+            string Name01 = "Ahmed";
+            string Name02 = "Ahmed";
+
+            Console.WriteLine(Name01);
+            Console.WriteLine($"Name01 HC : {Name01.GetHashCode()}");
+            Console.WriteLine(Name02);
+            Console.WriteLine($"Name01 HC : {Name02.GetHashCode()}");
+
+            Name02 = Name01;
+            Console.WriteLine("**************************");
+
+            Console.WriteLine(Name01);
+            Console.WriteLine($"Name01 HC : {Name01.GetHashCode()}");
+            Console.WriteLine(Name02);
+            Console.WriteLine($"Name01 HC : {Name02.GetHashCode()}");
+
+            Name01 = "mostafa";
+            Console.WriteLine("**************************");
+
+            Console.WriteLine(Name01);
+            Console.WriteLine($"Name01 HC : {Name01.GetHashCode()}");
+            Console.WriteLine(Name02);
+            Console.WriteLine($"Name01 HC : {Name02.GetHashCode()}");
+
             #endregion
             #endregion
 
