@@ -1,4 +1,6 @@
-﻿namespace Assignment
+﻿using System.Text;
+
+namespace Assignment
 {
     internal class Program
     {
@@ -46,14 +48,29 @@
 
             #region Q4
 
-            string xxx = Console.ReadLine();
-            string[] w = xxx.Split(' ');
+            //string xxx = Console.ReadLine();
+            //string[] w = xxx.Split(' ');
 
-            int x = int.Parse(w[0]);
-            int y = int.Parse(w[1]);
+            //int x = int.Parse(w[0]);
+            //int y = int.Parse(w[1]);
 
-            double result = Math.Pow(x, y);
-            Console.WriteLine(result);
+            //double result = Math.Pow(x, y);
+            //Console.WriteLine(result);
+            #endregion
+
+            #region Q5
+            
+            Console.WriteLine("Enter string");
+            string messag = Console.ReadLine();
+
+            StringBuilder xx = new StringBuilder();
+            for (int i = messag.Length - 1; i >= 0; i--)
+            {
+                xx.Append(messag[i]);
+
+            }
+            Console.WriteLine(xx);
+
             #endregion
         }
     }
