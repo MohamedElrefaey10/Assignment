@@ -151,21 +151,31 @@ namespace Assignment
             #endregion
 
             #region Q11
-            Console.WriteLine("Enter Number");
-            int x = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter Number");
+            //int x = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i <= x; i++)
+            //for (int i = 1; i <= x; i++)
+            //{
+            //    for (int k = 1; k <= x; k++)
+            //    {
+            //        if (i == k)
+            //            Console.Write("1");
+            //        else
+            //            Console.Write("0");
+
+            //    }
+            //    Console.WriteLine();
+            //}
+            #endregion
+
+            #region Q12
+            int[] number = { 1, 2, 3, 4, 5,6 };
+            int y = 0; 
+            for(int i = 0; i < number.Length; i++)
             {
-                for (int k = 1; k <= x; k++)
-                {
-                    if (i == k)
-                        Console.Write("1");
-                    else
-                        Console.Write("0");
-
-                }
-                Console.WriteLine();
+                y += number[i];
             }
+            Console.WriteLine(y);
             #endregion
         }
     }
