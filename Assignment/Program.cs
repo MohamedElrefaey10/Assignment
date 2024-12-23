@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Text;
 
 namespace Assignment
 {
@@ -92,33 +93,54 @@ namespace Assignment
 
             #region String
 
-            string Name; 
-            Name = new string("ahmed");
-            Name = "ahmed";
+            //string Name; 
+            //Name = new string("ahmed");
+            //Name = "ahmed";
 
-            string Name01 = "Ahmed";
-            string Name02 = "Ahmed";
+            //string Name01 = "Ahmed";
+            //string Name02 = "Ahmed";
 
-            Console.WriteLine(Name01);
-            Console.WriteLine($"Name01 HC : {Name01.GetHashCode()}");
-            Console.WriteLine(Name02);
-            Console.WriteLine($"Name01 HC : {Name02.GetHashCode()}");
+            //Console.WriteLine(Name01);
+            //Console.WriteLine($"Name01 HC : {Name01.GetHashCode()}");
+            //Console.WriteLine(Name02);
+            //Console.WriteLine($"Name01 HC : {Name02.GetHashCode()}");
 
-            Name02 = Name01;
-            Console.WriteLine("**************************");
+            //Name02 = Name01;
+            //Console.WriteLine("**************************");
 
-            Console.WriteLine(Name01);
-            Console.WriteLine($"Name01 HC : {Name01.GetHashCode()}");
-            Console.WriteLine(Name02);
-            Console.WriteLine($"Name01 HC : {Name02.GetHashCode()}");
+            //Console.WriteLine(Name01);
+            //Console.WriteLine($"Name01 HC : {Name01.GetHashCode()}");
+            //Console.WriteLine(Name02);
+            //Console.WriteLine($"Name01 HC : {Name02.GetHashCode()}");
 
-            Name01 = "mostafa";
-            Console.WriteLine("**************************");
+            //Name01 = "mostafa";
+            //Console.WriteLine("**************************");
 
-            Console.WriteLine(Name01);
-            Console.WriteLine($"Name01 HC : {Name01.GetHashCode()}");
-            Console.WriteLine(Name02);
-            Console.WriteLine($"Name01 HC : {Name02.GetHashCode()}");
+            //Console.WriteLine(Name01);
+            //Console.WriteLine($"Name01 HC : {Name01.GetHashCode()}");
+            //Console.WriteLine(Name02);
+            //Console.WriteLine($"Name01 HC : {Name02.GetHashCode()}");
+
+            #endregion
+            #endregion
+
+            #region video 05
+            #region string builder
+            StringBuilder message;
+            message = new StringBuilder("Hello");
+
+            Console.WriteLine(message);
+            Console.WriteLine(message.GetHashCode());
+
+            StringBuilder message02 = new StringBuilder("Welcom");
+
+            message02.Append("To Route");
+            message02.AppendLine(" mohamed");
+            message02.Append("abdullah");
+
+            message02.Remove(0, 5);
+            message02.Insert(0, "hello");
+
 
             #endregion
             #endregion
