@@ -185,6 +185,7 @@ namespace Assignment
             int[] num3;
 
             int[] max = num1.Concat(num2).ToArray();
+            Array.Sort(max);
             foreach (var item in max)
             {
                 Console.Write(item + " ");
@@ -192,6 +193,8 @@ namespace Assignment
 
 
             #endregion
+
+
         }
     }
 }
