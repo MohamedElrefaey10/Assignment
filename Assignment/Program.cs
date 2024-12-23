@@ -148,30 +148,56 @@ namespace Assignment
             #region video 06
 
             #region Array D1
-            int[] numbers = new int[3] { 1, 2, 3 };
-            int[] numbers2 = new int[] { 1, 2, 3 };
-            int[] numbers3 = { 1, 2, 3 };
-            int[] numbers4 = new int[3];
+            //int[] numbers = new int[3] { 1, 2, 3 };
+            //int[] numbers2 = new int[] { 1, 2, 3 };
+            //int[] numbers3 = { 1, 2, 3 };
+            //int[] numbers4 = new int[3];
 
-            numbers[0] = 1;
-            numbers[1] = 2;
-            numbers[2] = 3;
+            //numbers[0] = 1;
+            //numbers[1] = 2;
+            //numbers[2] = 3;
 
-            for(int i =0; i< numbers.Length; i++)
-            {
-                numbers[i] = i + 1;
-            }
-            Console.WriteLine("*************");
+            //for(int i =0; i< numbers.Length; i++)
+            //{
+            //    numbers[i] = i + 1;
+            //}
+            //Console.WriteLine("*************");
 
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                Console.WriteLine(numbers[i]);
-            }
-            Console.WriteLine(numbers.Length);
-            Console.WriteLine(numbers.Rank);
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
+            //Console.WriteLine(numbers.Length);
+            //Console.WriteLine(numbers.Rank);
             #endregion
             #endregion
 
+            #region video 07
+
+            #region 2D Array
+            int[,] mrks1 = new int[3, 5] { { 1, 2, 3, 4, 5 }, { 10, 20, 30, 40, 50 }, { 100, 200, 300, 400, 500 } };
+
+            Console.WriteLine(mrks1.Length);
+            Console.WriteLine(mrks1.Rank);
+            Console.WriteLine(mrks1.GetLength(0));
+            Console.WriteLine(mrks1.GetLength(1));
+
+            int[] Marks = new int[3, 5];
+            for (int i = 0; i < Marks.GetLength(0); i++)
+            {
+                Console.WriteLine($"Enter Grades Student{i + 1}");
+                for(int k = 0; k < Marks.GetLength(1))
+                {
+                    bool flag;
+                    Console.WriteLine($"Enter Grades Student{k + 1}");
+                    flag = int.TryParse(Console.ReadLine(), out Marks[i+ k]);
+                    k = flag && Marks[i, k] >= 0 ? ++k::k;
+                }
+            }
+
+            #endregion
+
+            #endregion
 
         }
     }
