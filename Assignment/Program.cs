@@ -180,19 +180,36 @@ namespace Assignment
 
             #region Q13
 
-            int[] num1 = { 1, 7, 3, 4 };
-            int[] num2 = { 2, 3, 4, 5 };
-            int[] num3;
+            //int[] num1 = { 1, 7, 3, 4 };
+            //int[] num2 = { 2, 3, 4, 5 };
+            //int[] num3;
 
-            int[] max = num1.Concat(num2).ToArray();
-            Array.Sort(max);
-            foreach (var item in max)
-            {
-                Console.Write(item + " ");
-            }
+            //int[] max = num1.Concat(num2).ToArray();
+            //Array.Sort(max);
+            //foreach (var item in max)
+            //{
+            //    Console.Write(item + " ");
+            //}
 
 
             #endregion
+
+            #region Q14
+
+            #endregion
+
+            #region Q15
+
+            int[] xxx = { 1, 7, 3, 4, 1, 2, 10, 11, 5, 1 };
+
+            Console.WriteLine("max in array");
+            Console.WriteLine(xxx.Max());
+            Console.WriteLine("min in array");
+            Console.WriteLine(xxx.Min());
+
+            #endregion
+
+
 
 
         }
