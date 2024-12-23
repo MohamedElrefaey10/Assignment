@@ -200,12 +200,23 @@ namespace Assignment
 
             #region Q15
 
-            int[] xxx = { 1, 7, 3, 4, 1, 2, 10, 11, 5, 1 };
+            //int[] xxx = { 1, 7, 3, 4, 1, 2, 10, 11, 5, 1 };
 
-            Console.WriteLine("max in array");
-            Console.WriteLine(xxx.Max());
-            Console.WriteLine("min in array");
-            Console.WriteLine(xxx.Min());
+            //Console.WriteLine("max in array");
+            //Console.WriteLine(xxx.Max());
+            //Console.WriteLine("min in array");
+            //Console.WriteLine(xxx.Min());
+
+            #endregion
+
+            #region Q16
+
+            int[] oo = { 2, 1, 3, 4, 10, 11, 5, 6, 13, 15, 16 };
+
+            Array.Sort(oo);
+
+            Console.WriteLine(oo[oo.Length - 2]);
+
 
             #endregion
 
