@@ -92,7 +92,7 @@ namespace Assignment
 
             #region String
 
-            string Name;
+            string Name; 
             Name = new string("ahmed");
             Name = "ahmed";
 
