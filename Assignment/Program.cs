@@ -126,22 +126,49 @@ namespace Assignment
 
             #region video 05
             #region string builder
-            StringBuilder message;
-            message = new StringBuilder("Hello");
+            //StringBuilder message;
+            //message = new StringBuilder("Hello");
 
-            Console.WriteLine(message);
-            Console.WriteLine(message.GetHashCode());
+            //Console.WriteLine(message);
+            //Console.WriteLine(message.GetHashCode());
 
-            StringBuilder message02 = new StringBuilder("Welcom");
+            //StringBuilder message02 = new StringBuilder("Welcom");
 
-            message02.Append("To Route");
-            message02.AppendLine(" mohamed");
-            message02.Append("abdullah");
+            //message02.Append("To Route");
+            //message02.AppendLine(" mohamed");
+            //message02.Append("abdullah");
 
-            message02.Remove(0, 5);
-            message02.Insert(0, "hello");
+            //message02.Remove(0, 5);
+            //message02.Insert(0, "hello");
 
 
+            #endregion
+            #endregion
+
+            #region video 06
+
+            #region Array D1
+            int[] numbers = new int[3] { 1, 2, 3 };
+            int[] numbers2 = new int[] { 1, 2, 3 };
+            int[] numbers3 = { 1, 2, 3 };
+            int[] numbers4 = new int[3];
+
+            numbers[0] = 1;
+            numbers[1] = 2;
+            numbers[2] = 3;
+
+            for(int i =0; i< numbers.Length; i++)
+            {
+                numbers[i] = i + 1;
+            }
+            Console.WriteLine("*************");
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.WriteLine(numbers[i]);
+            }
+            Console.WriteLine(numbers.Length);
+            Console.WriteLine(numbers.Rank);
             #endregion
             #endregion
 
