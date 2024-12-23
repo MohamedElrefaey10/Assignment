@@ -211,14 +211,34 @@ namespace Assignment
 
             #region Q16
 
-            int[] oo = { 2, 1, 3, 4, 10, 11, 5, 6, 13, 15, 16 };
+            //int[] oo = { 2, 1, 3, 4, 10, 11, 5, 6, 13, 15, 16 };
 
-            Array.Sort(oo);
+            //Array.Sort(oo);
 
-            Console.WriteLine(oo[oo.Length - 2]);
+            //Console.WriteLine(oo[oo.Length - 2]);
 
 
             #endregion
+
+            #region Q17
+
+            #endregion
+
+            #region Q18
+
+            #endregion
+
+            #region Q19
+            int[] kk = { 2, 1, 3, 4, 10, 11, 5, 6, 13, 15, 16 };
+            Array.Reverse(kk);
+            foreach (var item in kk)
+            {
+                Console.Write(item + " ");
+            }
+
+            #endregion
+
+
 
 
 
